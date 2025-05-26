@@ -1,0 +1,189 @@
+body {
+    font-family: 'serif'; /* Usa una fuente serif para una sensación tradicional */
+    line-height: 1.8; /* Aumento del interlineado para una mejor legibilidad */
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5dc; /* Beige claro, como papel de arroz */
+    color: #333; /* Darker text for contrast */
+   
+   background-repeat: repeat; /* Textura sutil de papel */
+}
+
+header {
+    background-color: #8b0000; /* Rojo oscuro, color tradicional japonés */
+    color: #fff;
+    padding: 2rem 0; /* Increased padding */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra más prominente */
+    border-bottom: 5px solid #fff; /* Borde blanco para contraste */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra de texto más prominente */
+    font-family: 'Georgia', serif; /* Fuente diferente para el encabezado */
+}
+
+nav {
+    background-color: #fff; /* Fondo blanco */
+    color: #333; /* Dark text */
+    text-align: center;
+    padding: 1rem 0; /* Increased padding */
+
+    border-bottom: 2px solid #8b0000; /* Borde rojo oscuro */
+}
+nav img{
+    margin-left: 10px;
+    display: none;
+    /*display: flex;*/
+}
+nav ul {
+
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Centra los elementos */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas más pequeñas */
+}
+
+nav ul li { /* Espaciado entre elementos */
+    margin: 0 20px; /* Increased spacing */
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    padding: 10px 0; /* Increased padding */
+    transition: color 0.3s ease-in-out; /* Transición suave del color */
+}
+
+nav ul li a:hover {
+    color: #8b0000; /* Resalte en rojo oscuro */
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 40px 0; /* Mayor relleno vertical */
+}
+
+section {
+    background: #fff;
+    padding: 40px; /* Mayor relleno interno */
+    margin-bottom: 20px;
+    border: 1px solid #ccc; /* Borde sutil */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    line-height: 1.8;
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Hace que la imagen sea un bloque para control de margen */
+    margin: 30px auto; /* Mayor espacio vertical y centrado */
+    border: 5px solid #fff; /* Borde blanco alrededor de las imágenes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra más prominente */
+}
+
+section h2 {
+    color: #8b0000; /* Encabezado en rojo oscuro */
+    border-bottom: 3px solid #8b0000; /* Dark red border */
+    padding-bottom: 15px; /* Increased padding */
+    margin-bottom: 30px; /* Increased margin */
+    font-size: 2em; /* Larger section headings */
+    font-family: 'Georgia', serif; /* Different font for heading */
+}
+
+footer {
+    text-align: center;
+    padding: 30px 0; /* Increased padding */
+    background-color: #8b0000; /* Pie de página en rojo oscuro */
+    color: #fff;
+    margin-top: 20px;
+    border-top: 5px solid #fff; /* Borde blanco */
+}
+
+/* Diseño Responsivo  los max-width delimitan el maximo de la pantalla*/
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 20px 0; /* Reduce el padding en pantallas pequeñas */
+    }
+
+   /* nav ul li {
+        display: block;
+        padding: 10px 0;
+        border-bottom: 1px solid #ccc;
+        margin: auto;
+    }
+
+    nav ul li:last-child {
+        border-bottom: none;
+    }*/
+
+    nav ul>li {
+    display: none;
+}
+
+    nav img {
+    display: flex;
+    }   
+
+    nav img:hover + div > ul > li,
+    nav div:hover ul > li { /* con esto vuelvo a contemplar el hover del div para poder comprobar que el usuario haga clic */
+    display: block;
+    }
+
+
+    /* Ajusta los encabezados y títulos de sección para pantallas más pequeñas */
+    header h1 {
+        font-size: 2em; /* Tamaño de fuente más pequeño */
+    }
+    
+    section {
+        padding: 20px;
+.responsive-img {
+    max-width: 100%; /* Asegura que la imagen no sea más ancha que su contenedor */
+    height: auto; /* Mantiene la proporción de la imagen al escalar */
+    display: block; /* Ayuda a eliminar el espacio extra debajo de la imagen */
+    margin-left: auto; /* Centra la imagen si su contenedor es más ancho */
+    margin-right: auto; /* Centra la imagen si su contenedor es más ancho */
+    }
+
+/* Opcional: Reglas para hacer que las secciones tengan un padding responsivo */
+section {
+    padding: 20px; /* Relleno por defecto */
+}
+.modoMovil{
+    display:block;
+    }
+@media (max-width: 768px) { /* Aplica estas reglas en pantallas de hasta 768px de ancho */
+    section {
+        padding: 10px; /* Reduce el relleno en pantallas pequeñas */
+    }
+}
+    }
+
+ section h2 {
+      font-size: 1.5em;
+ }
+
+
+}
+
+.seccionesKata{
+    display: flex;
+    position: relative;
+}
+
+.imgenKata{
+   margin-left:10% ; 
+}
+
+.seccionesKataHonores{
+
+    margin: auto;
+}
